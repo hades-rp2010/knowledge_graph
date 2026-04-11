@@ -1,0 +1,23 @@
+# Gemini CLI State & Privacy (Confidential)
+.gemini/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+
+# Knowledge Base Visualizations (Generated)
+kb_graph.html
+lib/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Agent Backups & Temp
+.gemini_backup/
+
+# Obsidian stuff
+.Obsidian/
