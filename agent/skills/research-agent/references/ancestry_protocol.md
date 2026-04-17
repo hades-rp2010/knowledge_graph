@@ -9,7 +9,10 @@ When integrating a new Paper A:
    - (Optional) Add `ROOT: true` to the YAML for organizational clarity.
 3. **Linkage (YAML Frontmatter):**
    - Add the relationship verb as a key and the ancestor's WikiLink as the value.
-   - **Allowed Verbs:** `EXTENDS`, `FIXES`, `GENERALIZES`, `PARALLELIZES`, `SPATIALIZES`, `CONCEPTUALIZES`, `EQUIVALENCE`.
+   - **Allowed Verbs:** 
+     - `EXTENDS`, `FIXES`, `GENERALIZES`, `PARALLELIZES`, `SPATIALIZES`, `CONCEPTUALIZES`, `EQUIVALENCE`.
+     - `EXPLAINS`: Used for **Blogs** that clarify a specific paper.
+     - `CONSOLIDATES`: Used for **Theses** that group multiple papers into a narrative.
    - **Multi-Parent Rule:** If a paper bridges multiple fields or ancestors, use a YAML list:
      ```yaml
      EXTENDS: 
@@ -22,12 +25,12 @@ When integrating a new Paper A:
 
 ## Maintenance
 - **WikiLinks:** Use `[[snake_case_filename]]` for all internal paper references.
-- **Master Index (README.md):** Every new paper MUST be appended to the table in `/Users/rishabhpatra/Desktop/kb/README.md` with the following columns:
+- **Master Index (INDEX.md):** Every new paper MUST be appended to the table in `/Users/rishabhpatra/Desktop/kb/INDEX.md` with the following columns:
     1. **Paper**: `[[id]]`
     2. **Theoretical Anchor**: High-level scientific framework.
     3. **Scientist Gist**: Core mechanistic intuition.
     4. **Engineer Delta**: Specific technical innovation.
     5. **Next Step**: The identified research opening.
-    6. **Category**: Folder path (e.g., NLP/LLMs).
+    6. **Category**: Folder path (`papers`, `blogs`, or `theses`).
     7. **Metric**: Primary SOTA result.
 - **The Log:** Every modification (add/edit/move) MUST be recorded in `/Users/rishabhpatra/Desktop/kb/CHANGELOG.md` with a timestamp.

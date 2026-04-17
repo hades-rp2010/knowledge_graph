@@ -34,6 +34,20 @@ Every new entry MUST be a single Markdown file titled in `snake_case`. It MUST c
 
 ---
 
+### Special Handling: Blogs
+*Focus: Capturing the "Intuition" and analogies.*
+- **Perspective A (Scientist):** Prioritize the **Analogy** and **Plain-Language Intuition**.
+- **Perspective B (Engineer):** Optional. If the blog does not provide exact metrics or math, state "Not reported (High-level summary)."
+- **Linkage:** MUST use `EXPLAINS: [[paper_id]]` if the blog is about a specific paper.
+
+### Special Handling: Theses
+*Focus: The "Grand Narrative" and shared infrastructure.*
+- **Perspective A (Scientist):** Focus on the **Global Narrative Arc**. Why were these papers done in this sequence? What is the "Grand Vision"?
+- **Perspective B (Engineer):** Focus on **Shared Infrastructure**. Did the student build a specific library, dataset, or pipeline used across all chapters?
+- **Linkage:** MUST use `CONSOLIDATES: ["[[paper_1]]", "[[paper_2]]"]`.
+
+---
+
 ## Extraction Rigor
 - **No Hallucinations:** If a paper does not provide an exact number, state "Not reported." 
-- **Tool Usage:** Use `pdftocairo` or `grep_search` to find exact table values. Do not summarize results from the abstract alone; verify in the "Experiments" section.
+- **Tool Usage:** Use `pdftocairo` or `grep_search` to find exact table values. Do not summarize results from the abstract alone; verify in the "Experiments" section. You may also create matplotlib plots to be embedded in the markdown files for graphs
