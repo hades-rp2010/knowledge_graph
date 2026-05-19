@@ -17,4 +17,4 @@ All tasks MUST follow the specific source-of-truth protocols in the `agent/` fol
 - **Lineage:** `agent/skills/research-agent/references/ancestry_protocol.md`
 - **Integrity:** `agent/skills/research-agent/references/lint_rules.md`
 
-**CRITICAL:** Always activate the `research-kb-manager` skill for research tasks.
+**CRITICAL:** For any research task (Ingest, Query, or Lint), read and follow the workflow instructions in `agent/skills/research-agent/SKILL.md`.

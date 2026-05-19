@@ -20,7 +20,7 @@ Lineage is tracked using an **Obsidian-native** approach. Check the **YAML front
 - **`TO_READ`**: Papers identified as the next logical step in this specific research path.
 
 ## Operational Guide
-This Knowledge Base is managed by a specialized **Research KB Manager** skill. Interact with it directly in the Gemini CLI:
+This Knowledge Base is managed by a specialized **Research KB Manager** agent. Interact with it in your CLI:
 - **Add a Paper:** `Ingest [Paper Title/Keywords]`
 - **Ask Questions:** `Query [Your scientific question]`
 - **Check Integrity:** `Run a lint check`

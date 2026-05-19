@@ -1,5 +1,6 @@
-# Gemini CLI State & Privacy (Confidential)
+# CLI State & Privacy (Confidential)
 .gemini/
+.antigravitycli/
 .env
 
 # Python

@@ -1,7 +1,3 @@
----
-name: research-kb-manager
-description: Interactive tools and protocols for managing the academic research knowledge base (Ingest, Query, Lint). Use this when adding papers, asking research questions, or maintaining wiki integrity.
----
 
 # Research Knowledge Base Manager
 
@@ -12,7 +8,7 @@ This skill provides the **Workflow Controller** for managing your research vault
 ### 1. Ingest (Socratic Mode)
 Use this to add new Papers, Blogs, or Theses.
 - **Workflow**:
-  1. **Lookup**: Run `scripts/zotero_lookup.py`.
+  1. **Lookup**: Run `python agent/skills/research-agent/scripts/zotero_lookup.py`.
   2. **Facts**: Present "Load-bearing Facts" from the source.
   3. **Discussion**: Wait for the user to lead a scientific discussion.
   4. **Draft**: Propose a summary ONLY when requested. **Follow `references/summary_protocol.md` strictly.**
@@ -26,7 +22,7 @@ Use this to synthesize knowledge from the vault.
   1. **Search**: Query the `INDEX.md` and the workspace.
   2. **Analyze**: Use the graph to trace lineages.
   3. **Respond**: Provide dual-perspective answers (Scientist/Engineer).
-  4. **Deep Dive**: Use `google_web_search` for external context.
+  4. **Deep Dive**: Use `search_web` for external context.
 
 ### 3. Lint
 Use this to verify KB health.
@@ -42,7 +38,7 @@ Use this to verify KB health.
 Mandatory for every modification:
 1. **INDEX.md**: Update the master table using the columns defined in `references/ancestry_protocol.md`.
 2. **CHANGELOG.md**: Record the event with a timestamp.
-3. **Graph**: Run `source .venv/bin/activate && python agent/skills/research-agent/scripts/vis.py`.
+3. **Graph**: Run `source .venv/bin/activate && python agent/skills/research-agent/scripts/vis.py` from the KB root.
 
 ---
 
